@@ -1,0 +1,12 @@
+{
+  "name": "ejs-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cham11ng/ejs-demo.git",
+  "author": "Sagar Chamling <sagarchamling@lftechnology.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
