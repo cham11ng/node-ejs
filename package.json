@@ -2,7 +2,7 @@
   "name": "ejs-demo",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:cham11ng/ejs-demo.git",
+  "repository": "git@github.com:cham11ng/node-ejs.git",
   "author": "Sagar Chamling <sagarchamling@lftechnology.com>",
   "license": "MIT",
   "scripts": {
@@ -16,7 +16,6 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
-    "@types/express": "^4.11.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
