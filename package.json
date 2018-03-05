@@ -1,0 +1,25 @@
+{
+  "name": "ejs-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cham11ng/node-ejs.git",
+  "author": "Sagar Chamling <sagarchamling@lftechnology.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "run-s clean compile",
+    "compile": "node -r babel-register build.js",
+    "start": "node -r babel-register src/index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2"
+  }
+}
