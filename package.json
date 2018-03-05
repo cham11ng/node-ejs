@@ -8,14 +8,15 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "run-s clean compile",
-    "compile": "node -r babel-register src/index.js"
+    "compile": "node -r babel-register build.js",
+    "start": "node -r babel-register src/index.js"
   },
   "dependencies": {
-    "@types/express": "^4.11.1",
     "ejs": "^2.5.7",
     "express": "^4.16.2"
   },
   "devDependencies": {
+    "@types/express": "^4.11.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",

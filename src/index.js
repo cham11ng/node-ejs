@@ -1,15 +1,19 @@
-import fs from 'fs';
-import mkdirp from 'mkdirp';
+import express from 'express';
 
-import { ejs2html } from './utils/ejs';
+const port = 8000;
+const host = '127.0.0.1';
+let app = express();
 
-mkdirp.sync('dist');
+app.set('view engine', 'ejs');
 
-const srcDir = __dirname + '/pages/';
-const outDir = __dirname + '/../dist/';
+app.get('/', function(req, res) {
+  res.render('pages/index');
+});
 
-const files = fs.readdirSync(srcDir);
+app.get('/about', function(req, res) {
+  res.render('pages/about');
+});
 
-files.forEach(filename => {
-  ejs2html(filename, srcDir, outDir);
+app.listen(port, host, () => {
+  console.log(`Server started at http://${host}:${port}`);
 });
